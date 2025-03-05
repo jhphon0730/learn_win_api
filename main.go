@@ -39,6 +39,14 @@ func callFindWindows() {
 	window.FindWindows(mod)
 }
 
-func main() {
+func callSetWindowPosition() {
+	mod := syscall.NewLazyDLL("user32.dll")
 
+	hWnd := window.FindWindows(mod)
+
+	window.SetWindowPosition(mod, hWnd, 0, 0, 800, 600)
+}
+
+func main() {
+	callSetWindowPosition()
 }
