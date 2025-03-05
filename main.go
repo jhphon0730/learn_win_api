@@ -6,6 +6,7 @@ import (
 	"syscall"
 	"win_api/cursor"
 	"win_api/message"
+	"win_api/metrics"
 )
 
 func callMousePointer() {
@@ -25,6 +26,12 @@ func callMessageBox() {
 	message.GetMessageBox(mod)
 }
 
+func callSystemMetrics() {
+	mod := syscall.NewLazyDLL("user32.dll")
+
+	metrics.GetSystemMetrics(mod)
+}
+
 func main() {
-	callMessageBox()
+	callSystemMetrics()
 }
