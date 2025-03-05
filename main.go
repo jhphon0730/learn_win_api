@@ -33,5 +33,5 @@ func callSystemMetrics() {
 }
 
 func main() {
-	callSystemMetrics()
+
 }
