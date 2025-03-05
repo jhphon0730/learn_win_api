@@ -32,4 +32,8 @@ func SetWindowPosition(mod *syscall.LazyDLL, hWnd uintptr, x, y, width, height i
 	)
 }
 
-func ShowWindow(mod *syscall.LazyDLL)
+func ShowWindow(mod *syscall.LazyDLL, hWnd uintptr, nCmdShow int32) {
+	proc := mod.NewProc("ShowWindow")
+
+	proc.Call(hWnd, uintptr(nCmdShow))
+}
