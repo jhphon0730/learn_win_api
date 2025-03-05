@@ -1,10 +1,10 @@
-📘 1. 기초 준비 (1주)
+[OK] 📘 1. 기초 준비 (1주)
 Go 언어 기본 문법 복습
 포인터, 구조체, 인터페이스, 패키지 관리
 Windows API 기본 개념
 DLL, 시스템 호출, 메시지 루프, 핸들 (Handle)
 
-🖱️ 2. 간단한 시스템 API 호출 (1~2주)
+[OK] 🖱️ 2. 간단한 시스템 API 호출 (1~2주)
 User32.dll & Kernel32.dll 사용
 GetCursorPos (마우스 위치)
 MessageBox (간단한 팝업 창)
